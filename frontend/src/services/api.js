@@ -1,9 +1,11 @@
 import axios from 'axios';
 
 // const api = axios.create({ baseURL: '/api', timeout: 15000 });
-const api = axios.create({ 
-  baseURL: process.env.REACT_APP_API_URL || '/api', 
-  timeout: 15000 
+const api = axios.create({
+  // baseURL: process.env.VITE_API_URL || '/api', 
+  // ✅ CORRECT (This is for Vite)
+  baseURL: import.meta.env.VITE_API_URL || '/api',
+  timeout: 15000
 });
 
 // Attach JWT to every request
