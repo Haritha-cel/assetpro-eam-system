@@ -1,6 +1,5 @@
 -- ============================================================
 -- AssetPro Database Schema
--- Run this entire file in pgAdmin Query Tool
 -- ============================================================
 
 -- Enable UUID extension
